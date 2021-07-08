@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .media{
+            background-color: blueviolet;
+        }
+
+        .media > h1{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .media-box{
+            background-color: crimson;
+            padding: 30px;
+        }
+
+        .media-box > h3{
+            text-align: center;
+            background-color: darkgray;
+            padding: 20px 0;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .media-box-2{
+            background-color: goldenrod;
+            padding: 40px 0;
+        }
+
+        .media-box-2 > h3{
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .media-video-2 > h3{
+            text-align: center;
+            background-color: indianred;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .media-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .media-audio,
+        .media-video{
+            width: 40%;
+        }
+
+        .media-video > video{
+            width: 90%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="media">
+        <h1>Here is Some Media File</h1>
+        <div class="media-box">
+            <h3>Media From Local Direction</h3>
+            <div class="media-content">
+                <div class="media-audio">
+                    <h3>Audio File input With Audio Tag.</h3>
+                    <audio controls src="media/audio/naat.mp3"></audio>
+                </div>
+                <div class="media-video">
+                    <h3>Video File Input With Video Tag.</h3>
+                    <video controls src="media/video/video.mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div class="media-box-2">
+            <h3>Media From Online</h3>
+            <div class="media-content">
+                <div class="media-video-2">
+                    <h3>Video File Input Iframe</h3>
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/Myksd-l0j1I" title="YouTube video player"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
